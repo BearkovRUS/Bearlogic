@@ -1,6 +1,5 @@
 <template>
 <v-layout column justify-center align-center>
-  <v-flex xs12 sm8 md6 >
     <v-row>
       <v-col lg="4" md="4" sm="12" v-for="cards in cards" :key="cards.id">
         <v-card class="d-inline-flex" min-width="100%">
@@ -12,7 +11,6 @@
         </v-card>
       </v-col>
     </v-row>
-  </v-flex>
 </v-layout>
 </template>
 

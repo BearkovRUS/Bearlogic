@@ -4,7 +4,6 @@
       v-model="drawer"
       :mini-variant="miniVariant"
       :clipped="clipped"
-      fixed
       app
       permanent
       src="https://images.unsplash.com/photo-1493470850224-0383bc6e091c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
@@ -54,7 +53,7 @@
        <v-list-item-avatar class="ma-2 avatarborder" size="40" to="/notifications"><v-img src="https://images.unsplash.com/photo-1579236389867-26388c47be13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></v-img> </v-list-item-avatar>
       </nuxt-link>      
     </v-app-bar>
-    <v-content>
+    <v-content style="max-height: 100vh;!important">
      <nuxt />
     </v-content>
     <v-footer

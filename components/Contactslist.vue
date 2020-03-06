@@ -2,6 +2,7 @@
     <v-navigation-drawer 
         permanent
         right
+        style="height: 100%"
       >
         <v-list>
           <v-list-item

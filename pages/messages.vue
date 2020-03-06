@@ -1,5 +1,5 @@
 <template>
-<v-container fill-height style="max-height: 90vh;" class="pa-0">
+<v-container fill-height style="max-height: 100vh; width: 100%; margin: 0px!important;" class="pa-0">
   <v-layout>
     <Contactslist />
         <v-hover v-slot:default="{ hover }">
