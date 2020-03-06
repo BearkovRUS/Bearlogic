@@ -1,6 +1,6 @@
 # Bearlogic
 
-> My splendiferous Nuxt.js project
+> You DO NOT have permission to use any code from this repository.
 
 ## Build Setup
 
