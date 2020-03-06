@@ -50,6 +50,7 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    baseURL: process.env.BASE_URL || 'http://localhost:3000/api'
   },
   /*
   ** vuetify module configuration
@@ -81,5 +82,8 @@ export default {
     */
     extend (config, ctx) {
     }
+  },
+  server: {
+    port: process.env.PORT || 8000
   }
 }
