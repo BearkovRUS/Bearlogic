@@ -9,6 +9,7 @@ const _7f1ca002 = () => interopDefault(import('../pages/login.vue' /* webpackChu
 const _73236ab4 = () => interopDefault(import('../pages/messages.vue' /* webpackChunkName: "pages/messages" */))
 const _d52bc004 = () => interopDefault(import('../pages/notifications.vue' /* webpackChunkName: "pages/notifications" */))
 const _4212e330 = () => interopDefault(import('../pages/patients.vue' /* webpackChunkName: "pages/patients" */))
+const _a77e1706 = () => interopDefault(import('../pages/register.vue' /* webpackChunkName: "pages/register" */))
 const _9d120648 = () => interopDefault(import('../pages/chats/_id.vue' /* webpackChunkName: "pages/chats/_id" */))
 const _126be630 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -52,6 +53,10 @@ export const routerOptions = {
     path: "/patients",
     component: _4212e330,
     name: "patients"
+  }, {
+    path: "/register",
+    component: _a77e1706,
+    name: "register"
   }, {
     path: "/chats/:id?",
     component: _9d120648,
