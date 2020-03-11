@@ -2,7 +2,7 @@ import firebase from 'firebase'
 import 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_KEY,
+  apiKey: "AIzaSyATYCIXfQA4b2GRtvhPf1IhAZi5ucs6HXY",
   authDomain: "bears-app-a8969.firebaseapp.com",
   databaseURL: "https://bears-app-a8969.firebaseio.com",
   projectId: "bears-app-a8969",
