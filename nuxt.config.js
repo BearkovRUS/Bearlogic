@@ -1,6 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
 
-
 export default {
   mode: 'universal',
   /*
@@ -43,9 +42,6 @@ export default {
   */
   modules: [
   ],
-  axios: {
-    baseURL: process.env.BASE_URL || 'http://localhost:3000'
-  },
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
@@ -76,8 +72,5 @@ export default {
     */
     extend (config, ctx) {
     }
-  },
-  server: {
-    port: process.env.PORT || 8000
-  },
+  }
 }

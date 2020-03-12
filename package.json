@@ -1,7 +1,7 @@
 {
-  "name": "MEDVED",
+  "name": "Portfolio",
   "version": "1.0.0",
-  "description": "My tremendous Nuxt.js project",
+  "description": "My personal portfolio",
   "author": "Bear",
   "private": true,
   "scripts": {
@@ -11,11 +11,10 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "firebase": "^7.10.0",
+    "@nuxtjs/vuetify": "^1.11.0",
+    "core-js": "^3.6.4",
+    "firebase": "^7.9.1",
     "nuxt": "^2.0.0",
-    "@nuxtjs/vuetify": "^1.0.0"
-  },
-  "devDependencies": {
-    
+    "vuetify": "^2.2.15"
   }
 }

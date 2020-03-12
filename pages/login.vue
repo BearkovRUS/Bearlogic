@@ -3,28 +3,35 @@
   <v-row>
    <v-col cols="12">
     <v-row align="center" justify="center" style="height: 100vh;">
-        <v-card class="pa-8" min-width="500px" max-width="500px" :loading="loading">
-            <v-img class="mb-4 mt-4" max-width="50%" src="https://i.ibb.co/NVjWkGV/Group-1.png"></v-img>
-            <v-form @submit.prevent="login">
-            <v-text-field
+        <v-card class="pa-10" min-width="500px">
+            <v-img class="mb-4" max-width="200px" src="https://i.ibb.co/3kqm30Z/placeh.png"></v-img>
+            <v-form @submit.prevent="enterBear">
+                <v-text-field
             v-model="email"
-            label="Email"
+            :rules="emailRules"
+            label="E-mail"
             required
             filled
-            :error="feedback"
+          ></v-text-field>
+            <v-text-field
+            v-model="firstname"
+            :rules="nameRules"
+            label="Password"
+            required
+            filled
           >
           </v-text-field>
            <v-text-field
-            v-model="password"
-            label="Password"
-            type="password"
+            v-model="lastname"
+            :rules="nameRules"
+            label="Organization Password"
             required
             filled
-            :error="feedback"
-            @keyup.enter="login"
           ></v-text-field>
-          <v-btn @click="login" class="green">Sign in</v-btn>
-           </v-form>
+          <v-btn class="green" to="/">Sign in</v-btn>
+          <v-btn class="green" @submit="enterBear">TEST</v-btn>
+           
+            </v-form>
         </v-card>
     </v-row>
    </v-col>
@@ -33,34 +40,11 @@
 </template>
 
 <script>
-import db from '@/firebase/init'
-import firebase from 'firebase'
-
 export default {
     layout: 'loginlayout',
-    data() {
-      return {
-        loading: null,
-        email: null,
-        password: null,
-        feedback: null,
-
-      }
-    },
     methods: {
-      login(){
-      if(this.email && this.password){
-        this.loading = true
-        firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
-        .then(() => {
-          firebase.auth().signInWithEmailAndPassword(this.email, this.password)
-        .then(cred => {
-          this.$router.push({name: 'index'})
-        })
-        })
-       } else {
-         this.feedback = true
-       }
+       enterBear(){
+         console.log('it works')
       }
     }
 }

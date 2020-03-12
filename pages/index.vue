@@ -18,23 +18,20 @@
         </v-card>
       </v-col>
       <v-col lg="6">
+      
       </v-col>
     </v-row>
 </v-layout>
 </template>
 
 <script>
-import db from '@/firebase/init'
-import firebase from 'firebase'
-import firestore from '@firebase/firestore'
 
 export default {
+
   components: {},
   methods: {},
-  middleware: 'auth',
   data() {
     return {
-      // profile: null,
       value: [9, -9 ],
       bear: 'brown',
       cards: [ 
@@ -57,8 +54,7 @@ export default {
       },
       ]
     }
-  },
-  
+  }
 }
 </script>
 

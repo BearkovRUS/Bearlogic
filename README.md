@@ -1,6 +1,6 @@
-# Bearlogic
+# Portfolio
 
-> My tremendous Nuxt.js project
+> My personal portfolio
 
 ## Build Setup
 

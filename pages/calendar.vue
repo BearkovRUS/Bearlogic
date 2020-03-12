@@ -103,7 +103,6 @@
 </template>
 <script>
   export default {
-    middleware: 'auth',
     data: () => ({
       focus: '',
       type: 'month',
