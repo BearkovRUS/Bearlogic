@@ -72,5 +72,8 @@ export default {
     */
     extend (config, ctx) {
     }
-  }
+  },
+  server: {
+    port: process.env.PORT || 8000
+  },
 }
