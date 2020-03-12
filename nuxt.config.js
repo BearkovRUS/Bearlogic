@@ -80,7 +80,7 @@ export default {
   server: {
     port: process.env.PORT || 8000
   },
-  env: {
-    firekey: process.env.FIREBASE_KEY
-  }
+  // env: {
+  //   firekey: process.env.FIREBASE_KEY
+  // }
 }
