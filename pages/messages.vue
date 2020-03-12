@@ -14,6 +14,7 @@
 import Contactslist from '~/components/Contactslist.vue'
 
   export default {
+    middleware: 'auth',
     components: {
       Contactslist
     },
