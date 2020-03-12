@@ -122,6 +122,11 @@ export default {
           title: 'My Appointments',
           to: '/appointments'
         },
+        {
+          icon: 'mdi-lock',
+          title: 'Admin',
+          to: '/admin'
+        },
         
       ],
       messages: [
